@@ -1,5 +1,20 @@
 
 
+#' Title
+#'
+#' @param object 
+#' @param ... 
+#'
+#' @return
+#' @export
+#' @importFrom ggbiplot ggbiplot
+#'
+#' @examples
+plot.biplot.pc <- function(object, ...){
+  ggbiplot(object$pc, ...)
+}
+
+
 #' plot.piesom.pc
 #'
 #' @param object
@@ -116,7 +131,7 @@ plot.piesom.property <- function(object){
 #' @import tidyr
 #' @importFrom kohonen unit.distances
 #' @importFrom kohonen object.distances
-#' @importFrom ggrepl geom_text_repel
+#' @importFrom ggrepel geom_text_repel
 #' @return
 #' @export
 #'
