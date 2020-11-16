@@ -123,6 +123,7 @@ plot.piesom.property <- function(object){
     ggtitle("Property(SOM)")
 }
 
+
 #' plot.piesom.map
 #'
 #' @param object
@@ -267,6 +268,8 @@ piesom_data <- function(object){
       yend = somgrid2pc.score.som.post.y[paste(xend_, yend_)],
       x.somgrid = x.somgrid
     )
+  
+  
   return(res)
 }
 
